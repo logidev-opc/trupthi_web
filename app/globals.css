@@ -1,26 +1,134 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-cream-bg: #F8F7EE;
+  --color-cream-alt: #F1EEDF;
+  --color-card-white: #FFFFFF;
+  --color-green-primary: #246B32;
+  --color-green-dark: #123D22;
+  --color-green-leaf: #5B963C;
+  --color-green-soft: #EBF4E8;
+  --color-text-dark: #172117;
+  --color-text-muted: #4D574B;
+  --color-earth-brown: #8A6245;
+  --color-earth-light: #D8CBB8;
+  --color-gold-accent: #C59A45;
+  
+  --background: var(--color-cream-bg);
+  --foreground: var(--color-text-dark);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-brand-cream: #F8F7EE;
+  --color-brand-cream-alt: #F1EEDF;
+  --color-brand-card: #FFFFFF;
+  --color-brand-green: #246B32;
+  --color-brand-forest: #123D22;
+  --color-brand-leaf: #5B963C;
+  --color-brand-green-soft: #EBF4E8;
+  --color-brand-text: #172117;
+  --color-brand-text-muted: #4D574B;
+  --color-brand-earth: #8A6245;
+  --color-brand-earth-light: #D8CBB8;
+  --color-brand-gold: #C59A45;
+
+  --font-telugu: "Noto Serif Telugu", "Noto Sans Telugu", serif;
+  --font-serif-heading: "Playfair Display", "Cinzel", Georgia, serif;
+  --font-sans-body: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-cream-bg);
+  color: var(--color-text-dark);
+  font-family: var(--font-sans-body);
+}
+
+/* Subtle organic grain texture */
+.bg-natural-texture {
+  background-color: #F8F7EE;
+  background-image: radial-gradient(#dcd5c4 0.65px, transparent 0.65px), radial-gradient(#dcd5c4 0.65px, #F8F7EE 0.65px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+.bg-dark-forest-texture {
+  background-color: #123D22;
+  background-image: radial-gradient(rgba(91, 150, 60, 0.12) 0.8px, transparent 0.8px);
+  background-size: 24px 24px;
+}
+
+/* Organic circular ring motif */
+.organic-ring-motif {
+  border: 1.5px solid rgba(36, 107, 50, 0.18);
+  border-radius: 9999px;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #C59A45 0%, #E2BE6C 50%, #A57D30 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Telugu typography accents */
+.telugu-heading {
+  font-family: var(--font-telugu);
+  letter-spacing: 0.015em;
+}
+
+.english-heading {
+  font-family: var(--font-serif-heading);
+  letter-spacing: -0.01em;
+}
+
+/* Smooth Page Entrance Transition */
+@keyframes pageEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-page-enter {
+  animation: pageEnter 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: opacity, transform;
+}
+
+/* Nav Link Underline Expansion */
+@keyframes navUnderline {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.animate-nav-underline {
+  animation: navUnderline 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: center;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F7EE;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #246B32;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #123D22;
 }
