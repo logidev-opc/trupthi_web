@@ -13,6 +13,7 @@ import {
 import {
   menuCategories,
   featuredDish,
+  bhojanamItems,
   idliVadaItems,
   milletDosaItems,
   pesarattuItems,
@@ -175,6 +176,92 @@ export default function FeaturedMenu() {
         )}
 
         <div className="space-y-16 sm:space-y-24">
+          {/* ================= 4.5. MENU CATEGORY: BHOJANAM (FULL THALI ONLY) ================= */}
+          {(showAll || activeCategory === "bhojanam") && (
+            <div className="p-6 sm:p-8 lg:p-10 rounded-3xl bg-white border border-[#246B32]/15 shadow-lg shadow-[#172117]/5 transition-all">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                {/* Left: Food Photography */}
+                <div className="lg:col-span-6 order-1">
+                  <div className="relative aspect-[4/3] sm:aspect-[16/11] rounded-2xl overflow-hidden bg-[#F0EFE6] shadow-sm group">
+                    <Image
+                      src="/images/hero-bhojanam-feast.jpg"
+                      alt="Grand Andhra Banana Leaf Bhojanam Full Thali Feast"
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+                    
+                    <div className="absolute top-3 left-3 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#123D22]/90 backdrop-blur-md border border-[#5B963C]/40 text-white text-xs font-bold shadow-md">
+                      <Sparkles className="w-3.5 h-3.5 text-[#E2BE6C]" />
+                      <span>Unlimited Banana Leaf Feast</span>
+                    </div>
+
+                    <div className="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-black/60 backdrop-blur-md border border-white/10 text-white flex items-center justify-between text-xs">
+                      <span className="text-[#A5D6A7] font-semibold">100% Pure Desi Ghee</span>
+                      <span className="text-white/80">Clay Pot Cooked</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right: Full Thali Dish Details */}
+                <div className="lg:col-span-6 order-2 flex flex-col justify-between text-left">
+                  <div>
+                    <div className="flex items-center justify-between gap-4 mb-2">
+                      <span className="text-xs font-bold text-[#246B32] font-serif uppercase tracking-widest telugu-heading">
+                        ఆంధ్రా సాంప్రదాయ భోజనం
+                      </span>
+                      <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[#EBF4E8] text-[#246B32] text-xs font-bold">
+                        <Leaf className="w-3 h-3" />
+                        Unlimited Feast
+                      </span>
+                    </div>
+
+                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#172117] font-serif english-heading tracking-tight mb-1">
+                      Full Thali
+                    </h3>
+
+                    <p className="text-sm font-bold text-[#246B32] font-serif mb-4 telugu-heading">
+                      సంపూర్ణ అరటి ఆకు భోజనం
+                    </p>
+
+                    {/* Daily Changing Menu Caption */}
+                    <div className="p-3.5 sm:p-4 rounded-2xl bg-[#F8F7EE] border border-[#246B32]/15 mb-6">
+                      <div className="flex items-start gap-2.5">
+                        <span className="text-base shrink-0 mt-0.5">🌿</span>
+                        <div className="space-y-1">
+                          <p className="text-xs sm:text-[13px] text-[#172117] font-semibold leading-snug">
+                            తాజా కాలానుగుణ పంటలను బట్టి కూరలు, వేపుళ్లు & పచ్చళ్లు ప్రతిరోజూ మారుతుంటాయి.
+                          </p>
+                          <p className="text-[11px] sm:text-xs text-[#8A6245] italic font-serif">
+                            Curries, fries & stone-ground chutneys change daily with fresh seasonal harvest.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Price Block */}
+                  <div className="pt-4 border-t border-[#246B32]/15 flex items-center justify-between flex-wrap gap-4">
+                    <div>
+                      <span className="text-xs text-[#8A6245] block font-medium">Full Thali Price</span>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-3xl sm:text-4xl font-extrabold text-[#246B32] font-serif">
+                          ₹314
+                        </span>
+                        <span className="text-xs text-[#4D574B] font-medium">/ per person</span>
+                      </div>
+                    </div>
+
+                    <div className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#EBF4E8] border border-[#246B32]/25 text-[#246B32] text-xs font-bold">
+                      <span>✨ Unlimited Servings</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* ================= 5. MENU CATEGORY: IDLI & VADA ================= */}
           {(showAll || activeCategory === "idli-vada") && (
             <div className="p-6 sm:p-8 lg:p-10 rounded-3xl bg-white border border-[#246B32]/15 shadow-lg shadow-[#172117]/5 transition-all">

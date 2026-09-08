@@ -3,6 +3,7 @@ export type { MenuItem, MenuCategory, PantryProduct };
 
 export const menuCategories: MenuCategory[] = [
   { id: "all", label: "All Items", teluguLabel: "అన్నీ" },
+  { id: "bhojanam", label: "Bhojanam", teluguLabel: "భోజనం" },
   { id: "idli-vada", label: "Idli & Vada", teluguLabel: "ఇడ్లీ & వడ" },
   { id: "millet-specials", label: "Millet Specials", teluguLabel: "మిల్లెట్ స్పెషల్స్" },
   { id: "pesarattu", label: "Pesarattu", teluguLabel: "పెసరట్టు" },
@@ -23,6 +24,21 @@ export const featuredDish: MenuItem = {
   grainInfo: "Ragi • Sajja • Jonna",
   isSignature: true,
 };
+
+export const bhojanamItems: MenuItem[] = [
+  {
+    id: "full-thali",
+    category: "bhojanam",
+    englishName: "Full Thali",
+    teluguName: "సంపూర్ణ అరటి ఆకు భోజనం",
+    price: "₹314",
+    image: "/images/hero-bhojanam-feast.jpg",
+    description:
+      "Unlimited traditional royal Andhra feast served on fresh banana leaf with steamed rice, clay-pot cooked Mudda Pappu, Kandi Podi, Desi Cow Ghee, Sambar, Rasam, Majjiga Pulusu, seasonal Vepudu, Gongura Pachadi, fresh curd, appadam, and traditional sweet payasam.",
+    isSignature: true,
+    badge: "Unlimited Feast",
+  },
+];
 
 export const idliVadaItems: MenuItem[] = [
   { id: "idly", category: "idli-vada", englishName: "Idly", teluguName: "ఇడ్లీ", price: "₹80" },
@@ -150,6 +166,7 @@ export const pantryProducts: PantryProduct[] = [
 
 export const menuItems: MenuItem[] = [
   featuredDish,
+  ...bhojanamItems,
   ...idliVadaItems,
   ...milletDosaItems,
   ...pesarattuItems,

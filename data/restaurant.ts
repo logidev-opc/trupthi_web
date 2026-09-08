@@ -8,8 +8,7 @@ export const restaurantData: RestaurantInfo = {
   teluguTagline: "ప్రకృతి నుంచి... పళ్లెం వరకు",
   teluguSubtitle: "గోవు ఆధారిత ప్రకృతి ఉత్పత్తులు మరియు ఆహారం",
   badge: "100% Pure Telugu Vegetarian",
-  phonePlaceholder: "+91 91234 56789",
-  emailPlaceholder: "namaste@trupthi-restaurant.com",
+  phonePlaceholder: "+91 94900 62627",
   addressPlaceholder: "Q9H3+963 Petrol Bunk, Yendada, Endada, Visakhapatnam, Andhra Pradesh 530045",
   city: "Visakhapatnam, Andhra Pradesh",
 

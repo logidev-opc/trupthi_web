@@ -19,7 +19,7 @@ export interface RestaurantInfo {
   teluguSubtitle: string;
   badge: string;
   phonePlaceholder: string;
-  emailPlaceholder: string;
+  emailPlaceholder?: string;
   addressPlaceholder: string;
   city: string;
   openingHours: OpeningHour[];

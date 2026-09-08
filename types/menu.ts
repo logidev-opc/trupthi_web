@@ -1,5 +1,6 @@
 export type MenuCategoryType =
   | "all"
+  | "bhojanam"
   | "idli-vada"
   | "millet-specials"
   | "pesarattu"

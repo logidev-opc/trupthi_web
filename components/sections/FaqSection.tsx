@@ -178,7 +178,7 @@ export default function FaqSection() {
             </p>
           </div>
           <a
-            href="tel:+919123456789"
+            href="tel:+919490062627"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#246B32] hover:bg-[#1B5226] text-white text-xs font-bold tracking-wide transition-all shadow-md hover:shadow-lg whitespace-nowrap"
           >
             Call Guest Desk

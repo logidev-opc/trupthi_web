@@ -11,10 +11,9 @@ export const siteConfig = {
   ogImage: "/images/hero-bhojanam.jpg",
   logo: "/logo/trupthi-logo-transparent.png",
   contact: {
-    phone: "+91 91234 56789",
-    rawPhone: "+919123456789",
-    whatsappPhone: "919123456789",
-    email: "namaste@trupthi-restaurant.com",
+    phone: "+91 94900 62627",
+    rawPhone: "+919490062627",
+    whatsappPhone: "919490062627",
     address: "Q9H3+963 Petrol Bunk, Yendada, Endada, Visakhapatnam, Andhra Pradesh - 530045",
     city: "Visakhapatnam",
     state: "Andhra Pradesh",

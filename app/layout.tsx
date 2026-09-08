@@ -113,7 +113,6 @@ export default function RootLayout({
         "description": siteConfig.description,
         "hasMenu": `${siteConfig.url}/menu`,
         "telephone": siteConfig.contact.phone,
-        "email": siteConfig.contact.email,
         "address": {
           "@type": "PostalAddress",
           "streetAddress": siteConfig.contact.address,

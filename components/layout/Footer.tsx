@@ -3,7 +3,7 @@ import BrandLogo from "@/components/ui/BrandLogo";
 import { restaurantData } from "@/data/restaurant";
 import { footerQuickLinks } from "@/config/navigation";
 import { siteConfig } from "@/config/site";
-import { MapPin, Phone, Mail, Clock, Heart, Sprout } from "lucide-react";
+import { MapPin, Phone, Clock, Heart, Sprout } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -80,10 +80,6 @@ export default function Footer() {
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#A5D6A7] shrink-0" />
                 <span>{restaurantData.phonePlaceholder}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-[#A5D6A7] shrink-0" />
-                <span>{restaurantData.emailPlaceholder}</span>
               </div>
             </div>
 

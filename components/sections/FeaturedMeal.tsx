@@ -1,23 +1,22 @@
 import Image from "next/image";
-import Link from "next/link";
-import { Sparkles, Utensils, Heart } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 export default function FeaturedMeal() {
   const mealCourses = [
     {
       step: "01",
-      title: "Signature Millet Specials & Cone Idly (మిల్లెట్ స్పెషల్స్ & కోన్ ఇడ్లీ)",
-      desc: "Nutrient-rich stone-ground Ragi, Sajja, and Jonna Cone Idlis along with crispy Millet Dosas, roasted to golden perfection with fragrant Desi Cow Ghee.",
+      title: "Signature Millet Specials & Cone Idly",
+      teluguTitle: "మిల్లెట్ స్పెషల్స్ & కోన్ ఇడ్లీ",
     },
     {
       step: "02",
-      title: "Classic Idli, Crispy Vada & Godavari Pesarattu (ఇడ్లీ, వడ & పెసరట్టు)",
-      desc: "Steaming hot soft Ghee Idlis, crunchy Medu Vadas, and authentic Upma Pesarattu served with fresh coconut, peanut & ginger allam chutneys.",
+      title: "Classic Idli, Crispy Vada & Godavari Pesarattu",
+      teluguTitle: "ఇడ్లీ, వడ & పెసరట్టు",
     },
     {
       step: "03",
-      title: "Degree Filter Coffee & Pure A2 Desi Cow Milk (డిగ్రీ ఫిల్టర్ కాఫీ & దేశీ ఆవు పాలు)",
-      desc: "Freshly brewed aromatic South Indian filter coffee served in a traditional brass dabarah, and warm unadulterated indigenous A2 cow milk.",
+      title: "Degree Filter Coffee & Pure A2 Desi Cow Milk",
+      teluguTitle: "డిగ్రీ ఫిల్టర్ కాఫీ & దేశీ ఆవు పాలు",
     },
   ];
 
@@ -72,52 +71,34 @@ export default function FeaturedMeal() {
               </span>
             </h2>
 
-            <p className="text-base sm:text-xl text-[#DCD5C4] font-serif italic mb-5 sm:mb-6">
+            <p className="text-base sm:text-xl text-[#DCD5C4] font-serif italic mb-6 sm:mb-8">
               A taste of Telugu tradition, served the way it should be.
             </p>
 
-            <p className="text-xs sm:text-sm md:text-base text-[#D4C3AC] leading-relaxed mb-6 sm:mb-8">
-              Eating on a natural banana leaf connects us directly with nature.
-              Every dish is freshly prepared with stone-ground batters, native organic
-              millets, pure bull-driven oils, and rich Desi Cow Ghee.
-            </p>
-
             {/* 3 Step Dining Flow */}
-            <div className="space-y-3.5 sm:space-y-4">
+            <div className="space-y-3 sm:space-y-3.5">
               {mealCourses.map((c) => (
                 <div
                   key={c.step}
                   className="p-3.5 sm:p-4 rounded-2xl bg-white/[0.06] border border-[#5B963C]/25 hover:border-[#5B963C]/50 transition-colors"
                 >
-                  <div className="flex items-start gap-3.5 sm:gap-4">
+                  <div className="flex items-center gap-3.5 sm:gap-4">
                     <span className="text-lg sm:text-xl font-black font-serif text-[#A5D6A7] shrink-0">
                       {c.step}
                     </span>
                     <div>
-                      <h3 className="text-sm sm:text-base font-bold text-white font-serif mb-0.5 sm:mb-1">
+                      <h3 className="text-sm sm:text-base font-bold text-white font-serif">
                         {c.title}
                       </h3>
-                      <p className="text-xs text-[#D8CBB8] leading-relaxed">
-                        {c.desc}
-                      </p>
+                      {c.teluguTitle && (
+                        <span className="block text-xs sm:text-sm font-semibold text-[#A5D6A7] font-serif telugu-heading mt-0.5">
+                          {c.teluguTitle}
+                        </span>
+                      )}
                     </div>
                   </div>
                 </div>
               ))}
-            </div>
-
-            <div className="mt-7 sm:mt-8 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
-              <Link
-                href="/menu"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold bg-[#246B32] hover:bg-[#5B963C] text-white transition-colors shadow-lg shadow-[#246B32]/30 border border-[#5B963C]/40"
-              >
-                <Utensils className="w-4 h-4" />
-                <span>View Full Menu</span>
-              </Link>
-              <span className="inline-flex items-center justify-center sm:justify-start gap-1.5 text-xs text-[#D8CBB8]">
-                <Heart className="w-4 h-4 text-[#A5D6A7]" />
-                Served with boundless Telugu hospitality
-              </span>
             </div>
           </div>
         </div>
