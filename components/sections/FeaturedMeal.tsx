@@ -6,18 +6,18 @@ export default function FeaturedMeal() {
   const mealCourses = [
     {
       step: "01",
-      title: "First Course: Pure Desi Cow Ghee & Mudda Pappu with Avakaya",
-      desc: "Steaming hot Sona Masoori rice topped with velvety thick toor dal, dollops of fragrant desi cow ghee, and fiery avakaya mango pickle.",
+      title: "Signature Millet Specials & Cone Idly (మిల్లెట్ స్పెషల్స్ & కోన్ ఇడ్లీ)",
+      desc: "Nutrient-rich stone-ground Ragi, Sajja, and Jonna Cone Idlis along with crispy Millet Dosas, roasted to golden perfection with fragrant Desi Cow Ghee.",
     },
     {
       step: "02",
-      title: "Second Course: Gutti Vankaya Gravy & Crisp Bendakaya Fry",
-      desc: "Tender stuffed sesame-peanut baby eggplant curry paired with crunchy farm-fresh okra fry and sun-dried appadalu.",
+      title: "Classic Idli, Crispy Vada & Godavari Pesarattu (ఇడ్లీ, వడ & పెసరట్టు)",
+      desc: "Steaming hot soft Ghee Idlis, crunchy Medu Vadas, and authentic Upma Pesarattu served with fresh coconut, peanut & ginger allam chutneys.",
     },
     {
       step: "03",
-      title: "Grand Finale: Pepper Cumin Rasam & Farm Fresh Curd",
-      desc: "Digestive black pepper rasam, followed by creamy whole buffalo curd and sweet Atreyapuram Poothareku.",
+      title: "Degree Filter Coffee & Pure A2 Desi Cow Milk (డిగ్రీ ఫిల్టర్ కాఫీ & దేశీ ఆవు పాలు)",
+      desc: "Freshly brewed aromatic South Indian filter coffee served in a traditional brass dabarah, and warm unadulterated indigenous A2 cow milk.",
     },
   ];
 
@@ -33,7 +33,7 @@ export default function FeaturedMeal() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10 ring-1 ring-[#5B963C]/30 group">
               <div className="aspect-[4/3] relative">
                 <Image
-                  src="/images/hero-bhojanam.jpg"
+                  src="/images/hero-bhojanam-feast.jpg"
                   alt="TRUPTHI Grand Andhra Banana Leaf Meal"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -41,18 +41,18 @@ export default function FeaturedMeal() {
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-[#0C2214]/90 via-transparent to-transparent" />
-              
-              <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-[#0C2214]/90 backdrop-blur-md border border-[#5B963C]/30 flex items-center justify-between">
-                <div>
-                  <p className="text-xs font-bold text-[#A5D6A7] uppercase tracking-wider">
-                    Unlimited Traditional Feast
+
+              <div className="absolute bottom-3.5 left-3.5 right-3.5 sm:bottom-6 sm:left-6 sm:right-6 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-[#0C2214]/92 backdrop-blur-md border border-[#5B963C]/30 flex items-center justify-between gap-2">
+                <div className="min-w-0">
+                  <p className="text-[10px] sm:text-xs font-bold text-[#A5D6A7] uppercase tracking-wider truncate">
+                    Traditional Banana Leaf Tiffins
                   </p>
-                  <p className="text-sm font-semibold text-[#F8F7EE]">
+                  <p className="text-xs sm:text-sm font-semibold text-[#F8F7EE] truncate">
                     Served with Pure Desi Cow Ghee
                   </p>
                 </div>
-                <div className="px-3.5 py-1 rounded-full bg-[#246B32] text-white text-xs font-bold shrink-0 border border-[#5B963C]/40">
-                  Daily Lunch & Dinner
+                <div className="px-2.5 sm:px-3.5 py-1 rounded-full bg-[#246B32] text-white text-[10px] sm:text-xs font-bold shrink-0 border border-[#5B963C]/40">
+                  Fresh Daily
                 </div>
               </div>
             </div>
@@ -62,35 +62,39 @@ export default function FeaturedMeal() {
           <div className="lg:col-span-6 order-1 lg:order-2">
             <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-white/10 border border-white/20 text-[#A5D6A7] text-xs font-bold uppercase tracking-widest mb-3">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Signature Dining Experience</span>
+              <span>Authentic Tiffin Experience</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-serif leading-tight text-white mb-2 telugu-heading">
               ఒక్క పళ్లెంలో...
-              <span className="block text-[#A5D6A7] mt-1">ఎన్నో సంప్రదాయ రుచులు</span>
+              <span className="block text-[#A5D6A7] mt-1">
+                ఎన్నో సాంప్రదాయ రుచులు
+              </span>
             </h2>
 
-            <p className="text-lg sm:text-xl text-[#DCD5C4] font-serif italic mb-6">
+            <p className="text-base sm:text-xl text-[#DCD5C4] font-serif italic mb-5 sm:mb-6">
               A taste of Telugu tradition, served the way it should be.
             </p>
 
-            <p className="text-sm sm:text-base text-[#D4C3AC] leading-relaxed mb-8">
-              Eating on a natural banana leaf connects us directly with nature. The warm food gently releases beneficial plant polyphenols from the leaf, imparting an earthy scent and wholesome goodness to every morsel.
+            <p className="text-xs sm:text-sm md:text-base text-[#D4C3AC] leading-relaxed mb-6 sm:mb-8">
+              Eating on a natural banana leaf connects us directly with nature.
+              Every dish is freshly prepared with stone-ground batters, native organic
+              millets, pure bull-driven oils, and rich Desi Cow Ghee.
             </p>
 
             {/* 3 Step Dining Flow */}
-            <div className="space-y-4">
+            <div className="space-y-3.5 sm:space-y-4">
               {mealCourses.map((c) => (
                 <div
                   key={c.step}
-                  className="p-4 rounded-2xl bg-white/[0.06] border border-[#5B963C]/25 hover:border-[#5B963C]/50 transition-colors"
+                  className="p-3.5 sm:p-4 rounded-2xl bg-white/[0.06] border border-[#5B963C]/25 hover:border-[#5B963C]/50 transition-colors"
                 >
-                  <div className="flex items-start gap-4">
-                    <span className="text-xl font-black font-serif text-[#A5D6A7] shrink-0">
+                  <div className="flex items-start gap-3.5 sm:gap-4">
+                    <span className="text-lg sm:text-xl font-black font-serif text-[#A5D6A7] shrink-0">
                       {c.step}
                     </span>
                     <div>
-                      <h3 className="text-sm sm:text-base font-bold text-white font-serif mb-1">
+                      <h3 className="text-sm sm:text-base font-bold text-white font-serif mb-0.5 sm:mb-1">
                         {c.title}
                       </h3>
                       <p className="text-xs text-[#D8CBB8] leading-relaxed">
@@ -102,15 +106,15 @@ export default function FeaturedMeal() {
               ))}
             </div>
 
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="mt-7 sm:mt-8 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
               <Link
                 href="/menu"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold bg-[#246B32] hover:bg-[#5B963C] text-white transition-colors shadow-lg shadow-[#246B32]/30 border border-[#5B963C]/40"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold bg-[#246B32] hover:bg-[#5B963C] text-white transition-colors shadow-lg shadow-[#246B32]/30 border border-[#5B963C]/40"
               >
                 <Utensils className="w-4 h-4" />
                 <span>View Full Menu</span>
               </Link>
-              <span className="inline-flex items-center gap-1.5 text-xs text-[#D8CBB8]">
+              <span className="inline-flex items-center justify-center sm:justify-start gap-1.5 text-xs text-[#D8CBB8]">
                 <Heart className="w-4 h-4 text-[#A5D6A7]" />
                 Served with boundless Telugu hospitality
               </span>

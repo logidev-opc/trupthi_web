@@ -67,8 +67,12 @@ export const metadata: Metadata = {
     images: [siteConfig.ogImage],
   },
   icons: {
-    icon: siteConfig.logo,
-    apple: siteConfig.logo,
+    icon: [
+      { url: "/favicon.png?v=2", type: "image/png" },
+      { url: "/favicon.ico?v=2" },
+    ],
+    shortcut: "/favicon.png?v=2",
+    apple: "/favicon.png?v=2",
   },
   other: {
     "geo.region": "IN-AP",
@@ -113,9 +117,9 @@ export default function RootLayout({
         "address": {
           "@type": "PostalAddress",
           "streetAddress": siteConfig.contact.address,
-          "addressLocality": "Siripuram, Waltair Uplands",
+          "addressLocality": "Yendada, Endada",
           "addressRegion": "Andhra Pradesh",
-          "postalCode": "530003",
+          "postalCode": "530045",
           "addressCountry": "IN",
         },
         "geo": {
@@ -136,8 +140,8 @@ export default function RootLayout({
               "Saturday",
               "Sunday"
             ],
-            "opens": "07:30",
-            "closes": "22:30",
+            "opens": "08:00",
+            "closes": "23:00",
           },
         ],
         "aggregateRating": {
@@ -166,6 +170,8 @@ export default function RootLayout({
       className={`${teluguFont.variable} ${serifFont.variable} ${sansFont.variable} scroll-smooth`}
     >
       <head>
+        <link rel="icon" href="/favicon.png?v=2" type="image/png" />
+        <link rel="apple-touch-icon" href="/favicon.png?v=2" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

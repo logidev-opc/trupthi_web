@@ -3,7 +3,6 @@ import { Header, Footer } from "@/components/layout";
 import { PageBanner } from "@/components/ui";
 import {
   Gallery,
-  Testimonials,
 } from "@/components/sections";
 import { siteConfig } from "@/config/site";
 
@@ -56,7 +55,6 @@ export default function GalleryPage() {
         breadcrumb="Gallery"
       />
       <Gallery />
-      <Testimonials />
       <Footer />
     </main>
   );

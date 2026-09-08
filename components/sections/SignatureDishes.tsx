@@ -40,7 +40,7 @@ export default function SignatureDishes() {
               {/* Image with zoom */}
               <div className="relative aspect-[4/3] overflow-hidden bg-[#EAE7DB]">
                 <Image
-                  src={dish.image}
+                  src={dish.image || "/images/menu/millet-cone-idli.png"}
                   alt={dish.englishName}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -49,7 +49,7 @@ export default function SignatureDishes() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#123D22]/80 via-transparent to-transparent opacity-50 group-hover:opacity-80 transition-opacity" />
                 
                 <div className="absolute top-3 right-3 px-2.5 py-0.5 rounded-full bg-[#123D22]/85 backdrop-blur-sm text-[#A5D6A7] text-xs font-bold border border-[#5B963C]/30">
-                  {dish.pricePlaceholder}
+                  {dish.price || dish.pricePlaceholder || "₹90"}
                 </div>
               </div>
 

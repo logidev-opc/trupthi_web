@@ -10,13 +10,13 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Visit Us & Reservations | Location, Timings & Directions | Vizag",
   description:
-    "Plan your visit to TRUPTHI Restaurant in Waltair Uplands, Visakhapatnam (Vizag). Timings, table reservations, directions, and pure vegetarian Telugu feasts.",
+    "Plan your visit to TRUPTHI Restaurant in Yendada, Endada, Visakhapatnam (Vizag). Timings, table reservations, directions, and pure vegetarian Telugu dining.",
   alternates: {
     canonical: `${siteConfig.url}/visit`,
   },
   openGraph: {
     title: "Visit TRUPTHI Vizag – Location, Hours & Table Booking",
-    description: "VIP Road, Waltair Uplands, Visakhapatnam. Pure vegetarian banana leaf meals, morning tiffins, and valet parking.",
+    description: "Q9H3+963 Petrol Bunk, Yendada, Endada, Visakhapatnam. Pure vegetarian banana leaf meals, morning tiffins, and valet parking.",
     url: `${siteConfig.url}/visit`,
   },
 };

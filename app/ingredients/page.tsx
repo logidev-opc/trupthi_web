@@ -11,13 +11,13 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Natural Sourcing & Purity | 100% Desi Cow Ghee & Heirloom Grains",
   description:
-    "Learn about our honest ingredients: pure bilona desi cow ghee, farm-fresh local vegetables, native unpolished grains, and cold-pressed oils.",
+    "Learn about our honest ingredients: pure bilona desi cow ghee, farm-fresh local vegetables, native unpolished grains, and bull-driven oils.",
   alternates: {
     canonical: `${siteConfig.url}/ingredients`,
   },
   openGraph: {
     title: "Pure Sourcing & Ghee Traditions – TRUPTHI Restaurant",
-    description: "Zero chemical preservatives, stone-ground masalas, cold-pressed oils, and farm fresh vegetables.",
+    description: "Zero chemical preservatives, stone-ground masalas, bull-driven oils, and farm fresh vegetables.",
     url: `${siteConfig.url}/ingredients`,
   },
 };
@@ -52,7 +52,7 @@ export default function IngredientsPage() {
       <PageBanner
         title="Our Natural Ingredients"
         teluguTitle="స్వచ్ఛమైన మరియు సహజ పదార్థాలు"
-        subtitle="Every dish is crafted with pure desi cow ghee, cold-pressed oils, native grains, and zero artificial colors or chemicals."
+        subtitle="Every dish is crafted with pure desi cow ghee, bull-driven oils, native grains, and zero artificial colors or chemicals."
         breadcrumb="Natural Sourcing"
       />
       <OrganicPromise />

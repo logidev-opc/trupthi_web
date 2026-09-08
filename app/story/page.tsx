@@ -4,7 +4,6 @@ import { PageBanner } from "@/components/ui";
 import {
   StorySection,
   IntroSection,
-  Testimonials,
 } from "@/components/sections";
 import { siteConfig } from "@/config/site";
 
@@ -51,13 +50,12 @@ export default function StoryPage() {
       <Header />
       <PageBanner
         title="Our Story & Heritage"
-        teluguTitle="మా పవిత్ర కథ & సంప్రదాయం"
+        teluguTitle="మా పవిత్ర కథ & సాంప్రదాయం"
         subtitle="Born from a deep reverence for authentic Telugu gastronomy, pure cow ghee, and ancient earthen culinary traditions."
         breadcrumb="Our Story"
       />
       <StorySection />
       <IntroSection />
-      <Testimonials />
       <Footer />
     </main>
   );

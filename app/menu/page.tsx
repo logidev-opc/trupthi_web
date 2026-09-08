@@ -52,7 +52,7 @@ export default function MenuPage() {
       <PageBanner
         title="Our Complete Menu"
         teluguTitle="తృప్తి పవిత్ర వంటకాలు & రుచులు"
-        subtitle="Slow-cooked in clay pots, made with pure desi cow ghee, cold-pressed oils, and farm-fresh organic ingredients."
+        subtitle="Slow-cooked in clay pots, made with pure desi cow ghee, bull-driven oils, and farm-fresh organic ingredients."
         breadcrumb="Menu"
       />
       {/* Andhra Banana Leaf Feast Spotlight */}

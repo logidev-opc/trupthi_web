@@ -199,14 +199,14 @@ export default function ReservationModal({ isOpen, onClose }: ReservationModalPr
                   onChange={(e) => setSession(e.target.value)}
                   className="w-full px-4 py-2.5 rounded-xl border border-[#246B32]/20 bg-white text-sm focus:outline-none focus:border-[#246B32] focus:ring-1 focus:ring-[#246B32]"
                 >
+                  <option value="Morning Tiffins (8:00 AM – 11:00 AM)">
+                    Morning Heritage Tiffins (8:00 AM – 11:00 AM)
+                  </option>
                   <option value="Lunch Bhojanam (12:00 PM – 3:30 PM)">
                     Afternoon Lunch Bhojanam (12:00 PM – 3:30 PM)
                   </option>
-                  <option value="Evening Tiffins & Dinner (7:00 PM – 10:30 PM)">
-                    Evening Tiffins & Dinner (7:00 PM – 10:30 PM)
-                  </option>
-                  <option value="Morning Tiffins (7:30 AM – 11:00 AM)">
-                    Morning Heritage Tiffins (7:30 AM – 11:00 AM)
+                  <option value="Evening Tiffins & Dinner (7:00 PM – 11:00 PM)">
+                    Evening Tiffins & Dinner (7:00 PM – 11:00 PM)
                   </option>
                 </select>
               </div>

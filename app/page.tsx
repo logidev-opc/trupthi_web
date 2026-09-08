@@ -10,7 +10,6 @@ import {
   SignatureDishes,
   WhyTrupthi,
   Gallery,
-  Testimonials,
   FaqSection,
   VisitSection,
 } from "@/components/sections";
@@ -51,9 +50,6 @@ export default function Home() {
 
       {/* Editorial Masonry Gallery */}
       <Gallery />
-
-      {/* Guest Reviews & Testimonials */}
-      <Testimonials />
 
       {/* Frequently Asked Questions (Schema.org Microdata) */}
       <FaqSection />

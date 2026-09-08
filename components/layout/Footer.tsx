@@ -51,18 +51,19 @@ export default function Footer() {
               <Clock className="w-3.5 h-3.5 text-[#5B963C]" />
               Opening Hours
             </h3>
-            <div className="space-y-2.5 text-xs text-[#D8CBB8]">
+            <div className="space-y-2 text-xs text-[#D8CBB8]">
               <div>
-                <p className="font-semibold text-white">Mon – Fri:</p>
-                <p>{siteConfig.openingHours.weekdays}</p>
+                <p className="font-semibold text-white">Morning Tiffins:</p>
+                <p>{siteConfig.openingHours.tiffin}</p>
               </div>
               <div>
-                <p className="font-semibold text-white">Sat – Sun & Festive Days:</p>
-                <p>{siteConfig.openingHours.weekends}</p>
+                <p className="font-semibold text-white">Lunch Feast (Bhojanam):</p>
+                <p>{siteConfig.openingHours.feastLunch}</p>
               </div>
-              <p className="text-[11px] text-[#A5D6A7] pt-1">
-                Banana Leaf Feast served daily from {siteConfig.openingHours.feastLunch} & {siteConfig.openingHours.feastDinner}
-              </p>
+              <div>
+                <p className="font-semibold text-white">Evening & Dinner:</p>
+                <p>{siteConfig.openingHours.feastDinner}</p>
+              </div>
             </div>
           </div>
 

@@ -12,7 +12,7 @@ interface FaqItem {
 const faqs: FaqItem[] = [
   {
     question: "Is TRUPTHI a 100% Pure Vegetarian restaurant?",
-    answer: "Yes, absolutely. TRUPTHI is exclusively 100% pure vegetarian (శుద్ధ శాకాహార భోజనం). We maintain strict kitchen sanctity with zero cross-contamination, sourcing authentic lentils, cold-pressed oils, and farm-fresh produce.",
+    answer: "Yes, absolutely. TRUPTHI is exclusively 100% pure vegetarian (శుద్ధ శాకాహార భోజనం). We maintain strict kitchen sanctity with zero cross-contamination, sourcing authentic lentils, bull-driven oils, and farm-fresh produce.",
     category: "Purity & Cooking",
   },
   {

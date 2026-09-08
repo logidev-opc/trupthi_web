@@ -168,7 +168,7 @@ export default function Header() {
 
       {/* Mobile Drawer Navigation */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 top-[70px] bg-[#123D22]/98 backdrop-blur-xl text-[#F8F7EE] z-40 flex flex-col justify-between p-6 animate-in fade-in slide-in-from-top-4 duration-300 border-t border-[#5B963C]/30 overflow-y-auto">
+        <div className="lg:hidden fixed inset-0 top-[62px] sm:top-[70px] bg-[#123D22]/98 backdrop-blur-xl text-[#F8F7EE] z-40 flex flex-col justify-between p-5 sm:p-6 animate-in fade-in slide-in-from-top-4 duration-300 border-t border-[#5B963C]/30 overflow-y-auto max-h-[calc(100vh-62px)]">
           <div className="space-y-4 pt-2">
             <div className="text-center pb-3 border-b border-white/10">
               <span className="text-xs uppercase tracking-widest text-[#5B963C] font-semibold flex items-center justify-center gap-1.5">
@@ -227,7 +227,7 @@ export default function Header() {
           <div className="mt-8 pt-4 border-t border-white/10 text-xs text-[#D8CBB8] space-y-2">
             <div className="flex items-center gap-2 text-[#EBF4E8]">
               <Clock className="w-4 h-4 text-[#5B963C]" />
-              <span>Timings: 07:00 AM – 10:30 PM Everyday</span>
+              <span>Timings: 08:00 AM – 11:00 PM Everyday</span>
             </div>
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-[#5B963C]" />

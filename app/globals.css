@@ -42,6 +42,16 @@ html {
   background-color: var(--color-cream-bg);
   color: var(--color-text-dark);
   font-family: var(--font-sans-body);
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Subtle organic grain texture */

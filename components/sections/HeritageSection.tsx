@@ -30,7 +30,7 @@ export default function HeritageSection() {
   ];
 
   return (
-    <section id="heritage" className="py-20 lg:py-28 bg-[#F8F7EE] bg-natural-texture relative overflow-hidden scroll-mt-24">
+    <section id="heritage" className="pt-6 pb-20 lg:pt-10 lg:pb-24 bg-[#F8F7EE] bg-natural-texture relative overflow-hidden scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left Column: Story Content */}

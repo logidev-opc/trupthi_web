@@ -1,23 +1,44 @@
-export type MenuCategoryType = "all" | "meals" | "tiffins" | "curries" | "sweets" | "beverages";
+export type MenuCategoryType =
+  | "all"
+  | "idli-vada"
+  | "millet-specials"
+  | "pesarattu"
+  | "beverages"
+  | "pantry"
+  | "meals"
+  | "tiffins"
+  | "curries"
+  | "sweets";
 
 export interface MenuItem {
   id: string;
   category: MenuCategoryType;
-  teluguName: string;
+  teluguName?: string;
   englishName: string;
-  description: string;
+  description?: string;
   teluguDescription?: string;
-  pricePlaceholder: string;
-  image: string;
+  price: string;
+  pricePlaceholder?: string;
+  image?: string;
   tags?: string[];
   isSignature?: boolean;
-  prepTime?: string;
+  badge?: string;
   dietTags?: string[];
+  grainInfo?: string;
 }
 
 export interface MenuCategory {
   id: MenuCategoryType;
   label: string;
-  teluguLabel: string;
+  teluguLabel?: string;
   iconName?: string;
+}
+
+export interface PantryProduct {
+  id: string;
+  name: string;
+  teluguName?: string;
+  description: string;
+  image: string;
+  price?: string;
 }

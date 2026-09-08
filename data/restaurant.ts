@@ -10,19 +10,24 @@ export const restaurantData: RestaurantInfo = {
   badge: "100% Pure Telugu Vegetarian",
   phonePlaceholder: "+91 91234 56789",
   emailPlaceholder: "namaste@trupthi-restaurant.com",
-  addressPlaceholder: "Plot No. 18, VIP Road, Near Siripuram Circle, Waltair Uplands, Visakhapatnam (Vizag), Andhra Pradesh - 530003",
+  addressPlaceholder: "Q9H3+963 Petrol Bunk, Yendada, Endada, Visakhapatnam, Andhra Pradesh 530045",
   city: "Visakhapatnam, Andhra Pradesh",
 
   openingHours: [
     {
-      days: "Monday – Friday",
-      timings: "07:00 AM – 10:30 PM",
-      session: "Breakfast: 7:00 AM - 11:00 AM | Lunch Feast: 12:00 PM - 3:30 PM | Dinner: 7:00 PM - 10:30 PM",
+      days: "Morning Tiffins (Breakfast)",
+      timings: "08:00 AM – 11:00 AM",
+      session: "Authentic South Indian & Telugu Heritage Breakfast",
     },
     {
-      days: "Saturday – Sunday & Festive Days",
-      timings: "06:30 AM – 11:00 PM",
-      session: "Breakfast: 6:30 AM - 11:30 AM | Traditional Grand Feast: 12:00 PM - 4:00 PM | Dinner: 7:00 PM - 11:00 PM",
+      days: "Afternoon Lunch Feast (Bhojanam)",
+      timings: "12:00 PM – 03:30 PM",
+      session: "Traditional Pure Veg Banana Leaf Feast",
+    },
+    {
+      days: "Evening Tiffins & Dinner",
+      timings: "07:00 PM – 11:00 PM",
+      session: "Delicious Evening Delicacies & Wholesome Dinner",
     },
   ],
   socials: [

@@ -53,3 +53,6 @@ Thumbs.db
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Archives & Deploy Bundles
+*.zip

@@ -11,7 +11,7 @@ import ReservationModal from "@/components/ui/ReservationModal";
 export default function VisitSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${siteConfig.coordinates.latitude},${siteConfig.coordinates.longitude}`;
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Q9H3+963 Petrol Bunk, Yendada, Endada, Visakhapatnam, Andhra Pradesh 530045")}`;
 
   return (
     <section id="visit" className="relative py-24 bg-[#122A1A] text-white overflow-hidden scroll-mt-24">
@@ -102,11 +102,11 @@ export default function VisitSection() {
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-wrap gap-4 items-center">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 items-stretch sm:items-center">
               <button
                 type="button"
                 onClick={() => setIsModalOpen(true)}
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold bg-[#C59A45] hover:bg-[#B38838] text-[#172117] transition-all shadow-lg shadow-[#C59A45]/30 border border-[#C59A45]"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold bg-[#C59A45] hover:bg-[#B38838] text-[#172117] transition-all shadow-lg shadow-[#C59A45]/30 border border-[#C59A45] cursor-pointer"
               >
                 <Sparkles className="w-4 h-4 text-[#172117]" />
                 <span>Reserve a Table</span>
@@ -114,7 +114,7 @@ export default function VisitSection() {
 
               <Link
                 href="/menu"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm font-bold bg-[#246B32] hover:bg-[#5B963C] text-white transition-all shadow-md border border-[#5B963C]/40"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-bold bg-[#246B32] hover:bg-[#5B963C] text-white transition-all shadow-md border border-[#5B963C]/40 cursor-pointer"
               >
                 <Utensils className="w-4 h-4" />
                 <span>Explore Menu</span>
@@ -124,7 +124,7 @@ export default function VisitSection() {
                 href={googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-full text-sm font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/25 transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full text-sm font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/25 transition-all"
               >
                 <Navigation className="w-4 h-4 text-[#A5D6A7]" />
                 <span>Directions</span>
@@ -141,7 +141,7 @@ export default function VisitSection() {
                   Restaurant Map Preview
                 </span>
                 <span className="text-[10px] px-2.5 py-0.5 rounded-full bg-[#246B32]/40 text-[#A5D6A7] font-semibold border border-[#5B963C]/30">
-                  Waltair Uplands, Vizag
+                  Yendada, Vizag
                 </span>
               </div>
 
@@ -157,7 +157,7 @@ export default function VisitSection() {
                   TRUPTHI (తృప్తి)
                 </h3>
                 <p className="text-xs text-[#D8CBB8] max-w-xs mb-4">
-                  VIP Road, Near Siripuram Circle, Waltair Uplands, Visakhapatnam (Vizag)
+                  Q9H3+963 Petrol Bunk, Yendada, Endada, Visakhapatnam
                 </p>
 
 

@@ -11,7 +11,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "From Nature to Plate | 4-Stage Farm-to-Table Experience",
   description:
-    "Explore our 4-stage signature process: organic farm sourcing, desi cow dairy, traditional clay pot cooking, and pure banana leaf dining.",
+    "Explore our 4-stage signature process: organic farm sourcing, desi cow milk, traditional clay pot cooking, and pure banana leaf dining.",
   alternates: {
     canonical: `${siteConfig.url}/nature-to-plate`,
   },

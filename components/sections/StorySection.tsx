@@ -11,7 +11,7 @@ const natureToPlateStages = [
   {
     step: "02",
     icon: Milk,
-    title: "Desi Cow Ghee & Dairy",
+    title: "Desi Cow Ghee & Milk",
     desc: "Unadulterated whole milk, freshly churned curd, and aromatic desi cow ghee that form the heart of authentic Telugu cuisine.",
   },
   {
@@ -130,7 +130,7 @@ export default function StorySection() {
 
             <div className="p-4 rounded-xl bg-white border-l-4 border-[#246B32] mb-6">
               <p className="text-base font-serif font-bold text-[#246B32] leading-relaxed">
-                &ldquo;గోవుల అనుబంధం, స్వచ్ఛమైన పదార్థాలు, సంప్రదాయ వంటింటి ద్వారా మీ పళ్లెంలోకి చేరుతుంది.&rdquo;
+                &ldquo;గోవుల అనుబంధం, స్వచ్ఛమైన పదార్థాలు, సాంప్రదాయ వంటింటి ద్వారా మీ పళ్లెంలోకి చేరుతుంది.&rdquo;
               </p>
             </div>
 

@@ -4,7 +4,7 @@ export default function WhyTrupthi() {
   const values = [
     {
       title: "PURE INGREDIENTS",
-      desc: "Desi cow ghee, cold-pressed oils, and farm fresh vegetables with zero artificial colors.",
+      desc: "Desi cow ghee, bull-driven oils, and farm fresh vegetables with zero artificial colors.",
       icon: Sprout,
     },
     {

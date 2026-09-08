@@ -51,7 +51,7 @@ export default function HeritagePage() {
       <Header />
       <PageBanner
         title="Telugu Food Heritage"
-        teluguTitle="మన సంప్రదాయం & వంటల సంస్కృతి"
+        teluguTitle="మన సాంప్రదాయం & వంటల సంస్కృతి"
         subtitle="Honoring centuries of culinary artistry: earthenware cooking, hand-pounded masalas, and warmhearted Telugu hospitality."
         breadcrumb="Telugu Heritage"
       />

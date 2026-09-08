@@ -18,16 +18,16 @@ const ingredients = [
   {
     number: "03",
     icon: Flame,
-    title: "Native Grains & Cold-Pressed Oils",
+    title: "Native Grains & Bull-Driven Oils",
     description:
-      "Unpolished Sona Masoori rice, native green gram for pesarattu, and pure cold-pressed groundnut and sesame oils.",
+      "Unpolished desi rices, hand made pulses, native green gram for pesarattu, and pure bull-driven groundnut and sesame oils.",
   },
   {
     number: "04",
     icon: Award,
     title: "Zero Artificial Enhancers",
     description:
-      "Strictly zero artificial colors, zero MSG, and zero preservatives. Pure wholesome food prepared with genuine care.",
+      "Strictly zero artificial colors, zero tasting salts, zero MSG, and zero preservatives. Pure wholesome food prepared with genuine care.",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function OrganicPromise() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#172117] font-serif telugu-heading mb-2">
-            మంచి రుచి... మంచి పదార్థాలతో మొదలవుతుంది
+            మంచి పదార్థాలతో మంచి రుచి మొదలవుతుంది
           </h2>
 
           <p className="text-xl sm:text-2xl text-[#246B32] font-serif english-heading italic mb-4">
