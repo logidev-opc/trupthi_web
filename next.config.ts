@@ -45,7 +45,8 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  // Use standalone for cPanel, standard for Vercel
+  ...(process.env.VERCEL ? {} : { output: "standalone" }),
   reactStrictMode: true,
   poweredByHeader: false,
   images: {
@@ -54,7 +55,7 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: "/(.*)",
+        source: "/:path*",
         headers: securityHeaders,
       },
     ];
