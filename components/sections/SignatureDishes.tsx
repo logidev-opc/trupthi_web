@@ -40,7 +40,7 @@ export default function SignatureDishes() {
               {/* Image with zoom */}
               <div className="relative aspect-[4/3] overflow-hidden bg-[#EAE7DB]">
                 <Image
-                  src={dish.image || "/images/menu/millet-cone-idli.png"}
+                  src={dish.image || "/images/menu/millet-cone-idli.jpg"}
                   alt={dish.englishName}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"

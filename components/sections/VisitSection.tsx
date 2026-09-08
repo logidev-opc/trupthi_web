@@ -18,7 +18,7 @@ export default function VisitSection() {
       {/* Background Ambience Photo with Deep Forest Vignette */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/gallery/restaurant-ambience.jpg"
+          src="/images/gallery/trupthi-gallery-01.jpg"
           alt="TRUPTHI Restaurant Ambience"
           fill
           sizes="100vw"

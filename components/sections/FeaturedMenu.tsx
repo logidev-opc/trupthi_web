@@ -383,7 +383,7 @@ export default function FeaturedMenu() {
                     {/* Item Image */}
                     <div className="relative w-full sm:w-36 aspect-[4/3] sm:aspect-square rounded-xl overflow-hidden bg-[#EAE7DB] shrink-0">
                       <Image
-                        src={item.image || "/images/menu/filter-coffee.png"}
+                        src={item.image || "/images/menu/filter-coffee.jpg"}
                         alt={item.englishName}
                         fill
                         sizes="(max-width: 640px) 100vw, 150px"
