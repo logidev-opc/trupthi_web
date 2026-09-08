@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "deploy:cpanel": "node scripts/prepare-deploy.mjs"
+    "lint": "eslint"
   },
   "dependencies": {
     "lucide-react": "^1.37.0",
