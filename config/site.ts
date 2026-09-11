@@ -8,8 +8,8 @@ export const siteConfig = {
   description:
     "Experience authentic Telugu vegetarian cuisine at TRUPTHI. Pure desi cow ghee, farm-fresh organic ingredients, stone-ground spices, and traditional recipes slow-cooked in clay pots.",
   url: "https://trupthi-restaurant.com",
-  ogImage: "/images/hero-bhojanam.jpg",
-  logo: "/logo/trupthi-logo-transparent.png",
+  ogImage: "https://res.cloudinary.com/djaaoxrv9/image/upload/v1789108766/hero-bhojanam_rzk7lq.jpg",
+  logo: "https://res.cloudinary.com/djaaoxrv9/image/upload/v1789108749/trupthi-logo-transparent_po0w30.png",
   contact: {
     phone: "+91 94900 62627",
     rawPhone: "+919490062627",

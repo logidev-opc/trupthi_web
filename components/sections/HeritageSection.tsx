@@ -80,7 +80,7 @@ export default function HeritageSection() {
             <div className="relative rounded-3xl overflow-hidden shadow-xl border-4 border-white ring-1 ring-[#246B32]/20 group">
               <div className="aspect-[4/3] sm:aspect-[16/11] relative">
                 <Image
-                  src="/images/heritage-cooking.jpg"
+                  src="https://res.cloudinary.com/djaaoxrv9/image/upload/v1789108766/heritage-cooking_rkygb8.jpg"
                   alt="Traditional Woodfire Cooking and Clay Pots at TRUPTHI Restaurant"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"

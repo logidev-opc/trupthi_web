@@ -32,7 +32,7 @@ export const bhojanamItems: MenuItem[] = [
     englishName: "Full Thali",
     teluguName: "సంపూర్ణ అరటి ఆకు భోజనం",
     price: "₹314",
-    image: "/images/hero-bhojanam-feast.jpg",
+    image: "https://res.cloudinary.com/djaaoxrv9/image/upload/v1789108767/hero-bhojanam-feast_oiht8s.jpg",
     description:
       "Unlimited traditional royal Andhra feast served on fresh banana leaf with steamed rice, clay-pot cooked Mudda Pappu, Kandi Podi, Desi Cow Ghee, Sambar, Rasam, Majjiga Pulusu, seasonal Vepudu, Gongura Pachadi, fresh curd, appadam, and traditional sweet payasam.",
     isSignature: true,

@@ -24,7 +24,7 @@ export default function BrandLogo({ variant = "header", className = "" }: BrandL
     >
       <div className="relative flex items-center justify-center bg-transparent">
         <Image
-          src="/logo/trupthi-logo-transparent.png"
+          src="https://res.cloudinary.com/djaaoxrv9/image/upload/v1789108749/trupthi-logo-transparent_po0w30.png"
           alt="TRUPTHI - తృప్తి Pure Organic Food Restaurant Logo"
           width={width}
           height={height}
