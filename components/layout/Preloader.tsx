@@ -106,16 +106,6 @@ export default function Preloader() {
         <source src="https://res.cloudinary.com/djaaoxrv9/video/upload/v1789110142/same_elanye_generate_chaiyu_ch_rdxu5s.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-
-      {/* Skip Button */}
-      <button
-        onClick={handleFinish}
-        type="button"
-        className="absolute top-6 right-6 z-30 px-4 py-1.5 rounded-full bg-black/40 hover:bg-black/70 border border-white/20 text-white/80 hover:text-white text-xs font-medium tracking-wider backdrop-blur-md transition-all cursor-pointer"
-        aria-label="Skip video intro"
-      >
-        Skip ✕
-      </button>
     </aside>
   );
 }
