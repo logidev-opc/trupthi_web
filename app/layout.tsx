@@ -97,8 +97,8 @@ export default function RootLayout({
         "name": "TRUPTHI Pure Organic Food (తృప్తి)",
         "alternateName": "TRUPTHI Telugu Vegetarian Restaurant Vizag",
         "url": siteConfig.url,
-        "image": `${siteConfig.url}${siteConfig.ogImage}`,
-        "logo": `${siteConfig.url}${siteConfig.logo}`,
+        "image": siteConfig.ogImage.startsWith("http") ? siteConfig.ogImage : `${siteConfig.url}${siteConfig.ogImage}`,
+        "logo": siteConfig.logo.startsWith("http") ? siteConfig.logo : `${siteConfig.url}${siteConfig.logo}`,
         "servesCuisine": [
           "Telugu",
           "Andhra",

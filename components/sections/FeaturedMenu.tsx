@@ -184,7 +184,7 @@ export default function FeaturedMenu() {
                 <div className="lg:col-span-6 order-1">
                   <div className="relative aspect-[4/3] sm:aspect-[16/11] rounded-2xl overflow-hidden bg-[#F0EFE6] shadow-sm group">
                     <Image
-                      src="/images/hero-bhojanam-feast.jpg"
+                      src="https://res.cloudinary.com/djaaoxrv9/image/upload/v1789108767/hero-bhojanam-feast_oiht8s.jpg"
                       alt="Grand Andhra Banana Leaf Bhojanam Full Thali Feast"
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"

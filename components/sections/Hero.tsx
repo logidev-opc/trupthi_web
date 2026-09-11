@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import heroBhojanamImg from "@/public/images/hero-bhojanam-feast.jpg";
 import {
   ArrowRight,
   Sparkles,
@@ -167,7 +166,7 @@ export default function Hero() {
                 {/* Main High-Res Thali Image */}
                 <div className="relative aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/3] xl:aspect-[16/11] rounded-2xl overflow-hidden bg-[#0A1A0F]">
                   <Image
-                    src={heroBhojanamImg}
+                    src="https://res.cloudinary.com/djaaoxrv9/image/upload/v1789108767/hero-bhojanam-feast_oiht8s.jpg"
                     alt="Authentic Andhra Telugu Vegetarian Banana Leaf Thali Feast with Desi Cow Ghee and Traditional Curries"
                     fill
                     priority

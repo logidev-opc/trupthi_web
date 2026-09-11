@@ -32,7 +32,7 @@ export default function FeaturedMeal() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10 ring-1 ring-[#5B963C]/30 group">
               <div className="aspect-[4/3] relative">
                 <Image
-                  src="/images/hero-bhojanam-feast.jpg"
+                  src="https://res.cloudinary.com/djaaoxrv9/image/upload/v1789108767/hero-bhojanam-feast_oiht8s.jpg"
                   alt="TRUPTHI Grand Andhra Banana Leaf Meal"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
