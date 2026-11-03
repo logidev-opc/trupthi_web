@@ -103,8 +103,8 @@ export default function Footer() {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#9EABA0] gap-4">
           <p>© 2026 TRUPTHI (తృప్తి). All Rights Reserved.</p>
           <div className="flex items-center gap-1">
-            <span>Crafted with devotion for</span>
-            <span className="text-[#A5D6A7] font-semibold">Telugu Food Heritage</span>
+            <span>Developed by</span>
+            <span className="text-[#A5D6A7] font-semibold">Logidev</span>
             <Heart className="w-3.5 h-3.5 text-[#5B963C] fill-current inline ml-1" />
           </div>
         </div>
