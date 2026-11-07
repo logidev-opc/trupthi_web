@@ -108,15 +108,46 @@ export default function NaturalFarmingSection() {
   return (
     <section
       id="natural-farming"
-      className="py-20 lg:py-28 bg-[#F1EEDF] bg-natural-texture relative overflow-hidden scroll-mt-24 border-y border-[#246B32]/10"
+      className="pt-8 sm:pt-10 lg:pt-12 pb-20 lg:pb-24 bg-[#F1EEDF] bg-natural-texture relative overflow-hidden scroll-mt-24 border-y border-[#246B32]/10"
     >
       {/* Decorative subtle ambient accents */}
       <div className="absolute -left-20 top-1/4 w-80 h-80 rounded-full bg-[#246B32]/5 blur-3xl pointer-events-none" />
       <div className="absolute -right-20 bottom-1/4 w-80 h-80 rounded-full bg-[#C59A45]/5 blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Top Bridging Spotlight Banner: Fills vertical space with cultural heritage context */}
+        <div className="max-w-4xl mx-auto mb-10 sm:mb-12">
+          <div className="rounded-2xl p-4 sm:p-5 bg-white/75 backdrop-blur-xs border border-[#246B32]/20 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-3.5 text-center sm:text-left">
+              <div className="w-11 h-11 rounded-xl bg-[#EBF4E8] border border-[#246B32]/30 flex items-center justify-center text-[#246B32] shrink-0">
+                <Sprout className="w-5 h-5" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2 justify-center sm:justify-start flex-wrap">
+                  <span className="text-[11px] font-bold text-[#246B32] uppercase tracking-wider bg-[#246B32]/10 px-2.5 py-0.5 rounded-full border border-[#246B32]/20">
+                    ఆంధ్రప్రదేశ్ ప్రకృతి వ్యవసాయ స్ఫూర్తి
+                  </span>
+                  <span className="text-xs text-[#8A6245] font-medium">
+                    Community Managed Natural Farming
+                  </span>
+                </div>
+                <p className="text-xs sm:text-sm text-[#172117] font-medium mt-1">
+                  Honoring Andhra’s natural farming movement and Subhash Palekar’s chemical-free cultivation wisdom.
+                </p>
+              </div>
+            </div>
+
+            <div className="shrink-0">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#246B32] text-white text-xs font-semibold shadow-xs">
+                <Sparkles className="w-3.5 h-3.5 text-[#C59A45]" />
+                <span>100% Pure & Honest</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#246B32]/10 border border-[#246B32]/25 text-[#246B32] text-xs font-bold uppercase tracking-widest mb-3">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Knowledge • Nature • Tradition</span>

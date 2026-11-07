@@ -35,7 +35,7 @@ export default function OrganicPromise() {
   return (
     <section
       id="ingredients"
-      className="py-20 lg:py-28 bg-[#F8F7EE] bg-natural-texture relative overflow-hidden scroll-mt-24"
+      className="pt-20 pb-10 lg:pt-28 lg:pb-12 bg-[#F8F7EE] bg-natural-texture relative overflow-hidden scroll-mt-24"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
