@@ -11,7 +11,7 @@ import ReservationModal from "@/components/ui/ReservationModal";
 export default function VisitSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const googleMapsUrl = `https://www.google.com/maps?q=${siteConfig.contact.geo.latitude},${siteConfig.contact.geo.longitude}`;
+  const googleMapsUrl = "https://maps.app.goo.gl/JPgVCHRn9pQ69Uvb9";
 
   return (
     <section id="visit" className="relative py-24 bg-[#122A1A] text-white overflow-hidden scroll-mt-24">
@@ -154,9 +154,9 @@ export default function VisitSection() {
               {/* Interactive Google Maps Iframe Card */}
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#5B963C]/40 bg-[#0C2214] shadow-inner group">
                 <iframe
-                  src="https://maps.google.com/maps?q=17.7761,83.3547+(TRUPTHI+Restaurant)&t=m&z=16&hl=en&ie=UTF8&iwloc=&output=embed"
-                  title="TRUPTHI Restaurant Google Maps Location"
-                  className="w-full h-full border-0 filter contrast-[1.05]"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.33!2d83.3521!3d17.778584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395b1f15986bed%3A0x64548897d322b754!2sTrupthi%20Bojanasala%20(Pure%20Vegetarian)!5e0!3m2!1sen!2sin!4v1731000000000!5m2!1sen!2sin"
+                  title="Trupthi Bojanasala (Pure Vegetarian) Location Map"
+                  className="w-full h-full border-0"
                   loading="lazy"
                   allowFullScreen
                   referrerPolicy="no-referrer-when-downgrade"
@@ -166,7 +166,7 @@ export default function VisitSection() {
                 <div className="absolute bottom-3 left-3 right-3 p-2.5 rounded-xl bg-[#0C2214]/92 backdrop-blur-md border border-[#5B963C]/40 flex items-center justify-between gap-2 shadow-lg">
                   <div className="min-w-0">
                     <p className="text-xs font-bold text-white font-serif truncate">
-                      TRUPTHI (తృప్తి)
+                      TRUPTHI (తృప్తి) Bhojanasala
                     </p>
                     <p className="text-[10px] text-[#A5D6A7] truncate">
                       Beside HP Petrol Bunk, NH-16, Yendada

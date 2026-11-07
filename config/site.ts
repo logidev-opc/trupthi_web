@@ -20,14 +20,15 @@ export const siteConfig = {
     state: "Andhra Pradesh",
     postalCode: "530045",
     country: "IN",
+    googleMapsUrl: "https://maps.app.goo.gl/JPgVCHRn9pQ69Uvb9",
     geo: {
-      latitude: 17.7761,
-      longitude: 83.3547,
+      latitude: 17.778584,
+      longitude: 83.35504,
     },
   },
   coordinates: {
-    latitude: 17.7761,
-    longitude: 83.3547,
+    latitude: 17.778584,
+    longitude: 83.35504,
   },
 
   openingHours: {
