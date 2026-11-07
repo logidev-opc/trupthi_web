@@ -1,16 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Phone, Clock, Navigation, CalendarDays, ExternalLink, Utensils, Sparkles, CheckCircle2 } from "lucide-react";
+import { MapPin, Phone, Clock, Navigation, CalendarDays, ExternalLink, Utensils, CheckCircle2 } from "lucide-react";
 import { restaurantData } from "@/data/restaurant";
 import { siteConfig } from "@/config/site";
-import ReservationModal from "@/components/ui/ReservationModal";
 
 export default function VisitSection() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   const googleMapsUrl = "https://maps.app.goo.gl/JPgVCHRn9pQ69Uvb9";
 
   return (
@@ -109,15 +105,6 @@ export default function VisitSection() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 items-stretch sm:items-center">
-              <button
-                type="button"
-                onClick={() => setIsModalOpen(true)}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold bg-[#C59A45] hover:bg-[#B38838] text-[#172117] transition-all shadow-lg shadow-[#C59A45]/30 border border-[#C59A45] cursor-pointer"
-              >
-                <Sparkles className="w-4 h-4 text-[#172117]" />
-                <span>Reserve a Table</span>
-              </button>
-
               <Link
                 href="/menu"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-bold bg-[#246B32] hover:bg-[#5B963C] text-white transition-all shadow-md border border-[#5B963C]/40 cursor-pointer"
@@ -204,8 +191,6 @@ export default function VisitSection() {
         </div>
       </div>
 
-      {/* Table Reservation Modal */}
-      <ReservationModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 }
