@@ -14,19 +14,21 @@ export const siteConfig = {
     phone: "+91 94900 62627",
     rawPhone: "+919490062627",
     whatsappPhone: "919490062627",
-    address: "Q9H3+963 Petrol Bunk, Yendada, Endada, Visakhapatnam, Andhra Pradesh - 530045",
+    address: "Beside HP Petrol Bunk (Dr. Raju Agencies), NH-16, Vivekananda Nagar, Yendada, Visakhapatnam, Andhra Pradesh - 530045",
+    landmark: "Beside HP Petrol Bunk (Dr. Raju Agencies)",
     city: "Visakhapatnam",
     state: "Andhra Pradesh",
     postalCode: "530045",
     country: "IN",
+    googleMapsUrl: "https://maps.app.goo.gl/JPgVCHRn9pQ69Uvb9",
     geo: {
-      latitude: 17.7761,
-      longitude: 83.3547,
+      latitude: 17.778584,
+      longitude: 83.35504,
     },
   },
   coordinates: {
-    latitude: 17.7761,
-    longitude: 83.3547,
+    latitude: 17.778584,
+    longitude: 83.35504,
   },
 
   openingHours: {

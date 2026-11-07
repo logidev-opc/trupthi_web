@@ -4,6 +4,7 @@ import {
   IntroSection,
   StorySection,
   OrganicPromise,
+  NaturalFarmingSection,
   FeaturedMeal,
   FeaturedMenu,
   HeritageSection,
@@ -32,6 +33,9 @@ export default function Home() {
 
       {/* Organic Promise (Dark Wood Section) */}
       <OrganicPromise />
+
+      {/* Wisdom of Natural Farming & Knowledge Section */}
+      <NaturalFarmingSection />
 
       {/* Signature Andhra Banana Leaf Feast Spotlight */}
       <FeaturedMeal />

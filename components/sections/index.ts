@@ -2,6 +2,7 @@ export { default as Hero } from "./Hero";
 export { default as IntroSection } from "./IntroSection";
 export { default as StorySection } from "./StorySection";
 export { default as OrganicPromise } from "./OrganicPromise";
+export { default as NaturalFarmingSection } from "./NaturalFarmingSection";
 export { default as FeaturedMeal } from "./FeaturedMeal";
 export { default as FeaturedMenu } from "./FeaturedMenu";
 export { default as HeritageSection } from "./HeritageSection";
