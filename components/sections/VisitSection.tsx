@@ -11,7 +11,7 @@ import ReservationModal from "@/components/ui/ReservationModal";
 export default function VisitSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("TRUPTHI Vegetarian Restaurant, Beside HP Petrol Bunk, NH-16, Vivekananda Nagar, Yendada, Visakhapatnam, Andhra Pradesh 530045")}`;
+  const googleMapsUrl = `https://www.google.com/maps?q=${siteConfig.contact.geo.latitude},${siteConfig.contact.geo.longitude}`;
 
   return (
     <section id="visit" className="relative py-24 bg-[#122A1A] text-white overflow-hidden scroll-mt-24">
@@ -153,11 +153,17 @@ export default function VisitSection() {
 
               {/* Map Canvas Visual Card */}
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#5B963C]/30 bg-[#0C2214] flex flex-col items-center justify-center p-4 sm:p-6 text-center group">
-                <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#5B963C_1px,transparent_1px)] [background-size:16px_16px]" />
+                <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#5B963C_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
                 
-                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#246B32]/40 border border-[#5B963C]/60 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform shadow-lg shadow-[#246B32]/30">
+                <a
+                  href={googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative z-20 cursor-pointer w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#246B32]/40 border border-[#5B963C]/60 flex items-center justify-center mb-2 hover:scale-110 transition-transform shadow-lg shadow-[#246B32]/30"
+                  title="Open in Google Maps"
+                >
                   <MapPin className="w-6 h-6 sm:w-7 sm:h-7 text-[#C59A45] animate-bounce" />
-                </div>
+                </a>
 
                 <h3 className="text-lg sm:text-xl font-bold text-white font-serif mb-0.5">
                   TRUPTHI (తృప్తి)
@@ -183,7 +189,7 @@ export default function VisitSection() {
                   href={googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full text-xs font-bold bg-[#246B32] hover:bg-[#5B963C] text-white transition-all shadow border border-[#5B963C]/40 hover:scale-105"
+                  className="relative z-20 cursor-pointer inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full text-xs font-bold bg-[#246B32] hover:bg-[#5B963C] text-white transition-all shadow-md border border-[#5B963C]/40 hover:scale-105 active:scale-95"
                 >
                   <Navigation className="w-3.5 h-3.5 text-[#A5D6A7]" />
                   <span>Open in Google Maps</span>
