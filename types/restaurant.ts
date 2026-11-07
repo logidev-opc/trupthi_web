@@ -21,6 +21,7 @@ export interface RestaurantInfo {
   phonePlaceholder: string;
   emailPlaceholder?: string;
   addressPlaceholder: string;
+  landmark?: string;
   city: string;
   openingHours: OpeningHour[];
   socials: SocialLink[];

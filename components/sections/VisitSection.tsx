@@ -11,7 +11,7 @@ import ReservationModal from "@/components/ui/ReservationModal";
 export default function VisitSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Q9H3+963 Petrol Bunk, Yendada, Endada, Visakhapatnam, Andhra Pradesh 530045")}`;
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("TRUPTHI Vegetarian Restaurant, Beside HP Petrol Bunk, NH-16, Vivekananda Nagar, Yendada, Visakhapatnam, Andhra Pradesh 530045")}`;
 
   return (
     <section id="visit" className="relative py-24 bg-[#122A1A] text-white overflow-hidden scroll-mt-24">
@@ -52,10 +52,16 @@ export default function VisitSection() {
                   <MapPin className="w-5 h-5 text-[#A5D6A7] shrink-0 mt-0.5" />
                   <div>
                     <h3 className="text-xs font-bold text-[#A5D6A7] uppercase tracking-wider mb-1">
-                      Our Location
+                      Our Location & Landmark
                     </h3>
+                    <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-[#C59A45]/20 text-[#F5D77F] text-[11px] font-semibold mb-1.5">
+                      <span>Landmark: Beside HP Petrol Bunk (Dr. Raju Agencies)</span>
+                    </div>
                     <p className="text-xs text-[#F8F7EE] leading-relaxed">
                       {restaurantData.addressPlaceholder}
+                    </p>
+                    <p className="text-[11px] text-[#A5D6A7] mt-1 font-medium">
+                      Near GITAM University Road Junction
                     </p>
                   </div>
                 </div>
@@ -146,29 +152,42 @@ export default function VisitSection() {
               </div>
 
               {/* Map Canvas Visual Card */}
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#5B963C]/30 bg-[#0C2214] flex flex-col items-center justify-center p-6 text-center group">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#5B963C]/30 bg-[#0C2214] flex flex-col items-center justify-center p-4 sm:p-6 text-center group">
                 <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#5B963C_1px,transparent_1px)] [background-size:16px_16px]" />
                 
-                <div className="w-16 h-16 rounded-full bg-[#246B32]/40 border border-[#5B963C]/60 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-lg shadow-[#246B32]/30">
-                  <MapPin className="w-8 h-8 text-[#C59A45] animate-bounce" />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#246B32]/40 border border-[#5B963C]/60 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform shadow-lg shadow-[#246B32]/30">
+                  <MapPin className="w-6 h-6 sm:w-7 sm:h-7 text-[#C59A45] animate-bounce" />
                 </div>
 
-                <h3 className="text-lg font-bold text-white font-serif mb-1">
+                <h3 className="text-lg sm:text-xl font-bold text-white font-serif mb-0.5">
                   TRUPTHI (తృప్తి)
                 </h3>
-                <p className="text-xs text-[#D8CBB8] max-w-xs mb-4">
-                  Q9H3+963 Petrol Bunk, Yendada, Endada, Visakhapatnam
+                <p className="text-[11px] text-[#A5D6A7] font-serif telugu-heading mb-2">
+                  స్వచ్ఛమైన తెలుగు శాకాహార భోజనశాల
                 </p>
 
+                {/* Structured Landmark & Location Details */}
+                <div className="w-full max-w-sm bg-white/[0.06] backdrop-blur-xs rounded-xl p-2.5 sm:p-3 mb-3 border border-[#5B963C]/25 text-center">
+                  <div className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#C59A45]/20 border border-[#C59A45]/40 text-[#F5D77F] text-[10px] sm:text-[11px] font-bold mb-1">
+                    <span>📍 Landmark: Beside HP Petrol Bunk (Dr. Raju Agencies)</span>
+                  </div>
+                  <p className="text-xs sm:text-[13px] text-[#F8F7EE] font-semibold leading-tight">
+                    NH-16, Vivekananda Nagar, Yendada
+                  </p>
+                  <p className="text-[10px] sm:text-[11px] text-[#A5D6A7] mt-0.5 font-medium">
+                    Near GITAM University Road, Visakhapatnam – 530045
+                  </p>
+                </div>
 
                 <a
                   href={googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full text-xs font-bold bg-[#246B32] hover:bg-[#5B963C] text-white transition-colors shadow border border-[#5B963C]/40"
+                  className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full text-xs font-bold bg-[#246B32] hover:bg-[#5B963C] text-white transition-all shadow border border-[#5B963C]/40 hover:scale-105"
                 >
+                  <Navigation className="w-3.5 h-3.5 text-[#A5D6A7]" />
                   <span>Open in Google Maps</span>
-                  <ExternalLink className="w-3.5 h-3.5" />
+                  <ExternalLink className="w-3.5 h-3.5 opacity-80" />
                 </a>
               </div>
 

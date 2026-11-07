@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Visit TRUPTHI Vizag – Location, Hours & Table Booking",
-    description: "Q9H3+963 Petrol Bunk, Yendada, Endada, Visakhapatnam. Pure vegetarian banana leaf meals, morning tiffins, and valet parking.",
+    description: "Beside HP Petrol Bunk (Dr. Raju Agencies), NH-16, Vivekananda Nagar, Yendada, Visakhapatnam. Pure vegetarian banana leaf meals, morning tiffins, and valet parking.",
     url: `${siteConfig.url}/visit`,
   },
 };

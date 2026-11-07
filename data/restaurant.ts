@@ -9,7 +9,8 @@ export const restaurantData: RestaurantInfo = {
   teluguSubtitle: "గోవు ఆధారిత ప్రకృతి ఉత్పత్తులు మరియు ఆహారం",
   badge: "100% Pure Telugu Vegetarian",
   phonePlaceholder: "+91 94900 62627",
-  addressPlaceholder: "Q9H3+963 Petrol Bunk, Yendada, Endada, Visakhapatnam, Andhra Pradesh 530045",
+  landmark: "Beside HP Petrol Bunk (Dr. Raju Agencies), Near GITAM University Road",
+  addressPlaceholder: "Beside HP Petrol Bunk (Dr. Raju Agencies), NH-16, Vivekananda Nagar, Yendada, Visakhapatnam, Andhra Pradesh 530045",
   city: "Visakhapatnam, Andhra Pradesh",
 
   openingHours: [
